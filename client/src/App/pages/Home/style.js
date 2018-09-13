@@ -200,7 +200,7 @@ const Headline = styled.h1`
 `;
 
 const Emphasis = styled.span`
-  color: #405dcf;
+  color: #405DCF;
 `;
 
 const Subtitle = styled.h4`

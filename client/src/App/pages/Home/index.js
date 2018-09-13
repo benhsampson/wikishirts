@@ -4,6 +4,8 @@ import scrollToComponent from 'react-scroll-to-component';
 import purplePattern from '../../../pattern-purple.svg';
 import close from '../../../close.svg';
 
+import Cart from './Cart';
+
 import {
   Wrapper,
   ModalUnderlay,
@@ -106,6 +108,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <Cart />
         {this.state.previewModalOpen && (
           <React.Fragment>
             <ModalUnderlay onClick={() => this.setState({ previewModalOpen: false })} />
@@ -218,7 +221,7 @@ class App extends Component {
               </ShirtsList>
             </Container>
           </Shirts>
-        ) : ''};
+        ) : ''}
         <FAQ>
           <Container>
             <FAQHeading>
